@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --background-gradient: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.form-input {
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #e2e8f0;
+}
+
+.form-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.search-button {
+  background: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-1px);
+}
+
+.product-card {
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
